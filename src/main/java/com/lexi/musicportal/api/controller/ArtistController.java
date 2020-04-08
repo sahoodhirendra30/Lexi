@@ -75,7 +75,7 @@ public class ArtistController extends AbstractBaseRestController {
 
 	}
 
-	@RequestMapping(value = "/artists", method = RequestMethod.POST)
+	@RequestMapping(value = "${musicportal.artist.rest.get.uri}", method = RequestMethod.POST)
 	public ResponseEntity<?> saveArtist(@RequestBody Artist artist) {
 		try {
 			artistService.createArtist(artist);
@@ -86,7 +86,7 @@ public class ArtistController extends AbstractBaseRestController {
 		return ResponseEntity.status(HttpStatus.CREATED).build();
 	}
 
-	@RequestMapping(value = "/artists/{artistId}", method = RequestMethod.PUT)
+	@RequestMapping(value = "${musicportal.artist.rest.get.uri}/{artistId}", method = RequestMethod.PUT)
 	public ResponseEntity<?> updateArtist(@PathVariable Long id,
 			@RequestBody com.lexi.musicportal.api.model.Artist artist) {
 		try {
