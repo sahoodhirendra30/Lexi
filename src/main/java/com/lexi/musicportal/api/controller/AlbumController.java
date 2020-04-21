@@ -27,6 +27,13 @@ import com.lexi.musicportal.api.util.SortDirection;
 import io.swagger.annotations.ApiParam;
 import lombok.extern.slf4j.Slf4j;
 
+/**
+ * The contrller class for Album
+ *
+ * @author Dhirendra
+ *
+ */
+
 @Slf4j
 @RestController
 public class AlbumController extends AbstractBaseRestController {

@@ -22,23 +22,23 @@ public class Images {
 	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "IMAGES_SEQ")
 	@Column(name = "ID")
 	private Long id;
-
-	@Column(name = "URI", nullable = false, length = 100)
+	
+	@Column(name = "URI", nullable = true, length = 100)
 	private String uri;
 	
-	@Column(name = "HEIGHT", nullable = false, length = 6)
+	@Column(name = "HEIGHT", nullable = true, length = 6)
 	private Long height;
 	
-	@Column(name = "WIDTH", nullable = false, length = 6)
+	@Column(name = "WIDTH", nullable = true, length = 6)
 	private Long width;
 	
-	@Column(name = "RESOURCE_URL", nullable = false, length = 100)
+	@Column(name = "RESOURCE_URL", nullable = true, length = 100)
 	private String resource_url;
 	
-	@Column(name = "TYPE", nullable = false, length = 20)
+	@Column(name = "TYPE", nullable = true, length = 20)
 	private String type;
 	
-	@Column(name = "URI150", nullable = false, length = 100)
+	@Column(name = "URI150", nullable = true, length = 100)
 	private String uri150;
 
 }
