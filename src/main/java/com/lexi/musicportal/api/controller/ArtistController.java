@@ -43,7 +43,7 @@ public class ArtistController extends AbstractBaseRestController {
 	@ApiOperation(value = "Get list of artists", response = Artist.class)
 
 	public ResponseEntity<?> getAllArtists(
-			@ApiParam(value = "artistName", required = true) @RequestParam(name = "artistName", required = true) String artistName,
+			@ApiParam(value = "artistName", required = true) @RequestParam(name = "artistName", required = false) String artistName,
 			@ApiParam(value = "requested page number", required = false) @RequestParam(name = "page", required = false) Integer page,
 			@ApiParam(value = "requested page size", required = false) @RequestParam(name = "size", required = false) Integer size,
 			@ApiParam(value = "sort by column name", required = false, defaultValue = "artistId", allowableValues = "artistName") @RequestParam(name = "sort_by", required = false) String sortBy,
