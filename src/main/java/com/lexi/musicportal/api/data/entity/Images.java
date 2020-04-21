@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
@@ -42,9 +40,5 @@ public class Images {
 	
 	@Column(name = "URI150", nullable = false, length = 100)
 	private String uri150;
-
-	@ManyToOne
-    @JoinColumn(name = "ID", insertable = false, updatable = false, referencedColumnName = "ID")     
-    private ArtistDetail artistDetail;
 
 }

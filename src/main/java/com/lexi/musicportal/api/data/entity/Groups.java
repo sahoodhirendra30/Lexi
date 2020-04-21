@@ -27,16 +27,11 @@ public class Groups {
 
 	@Column(name = "NAME", nullable = false, length = 20)
 	private String name;
-	
+
 	@Column(name = "ACTIVE", nullable = false, length = 6)
 	private Boolean active;
-	
+
 	@Column(name = "RESOURCE_URL", nullable = false, length = 100)
 	private String resource_url;
-
-	@ManyToOne
-    @JoinColumn(name = "ID", insertable = false, updatable = false, referencedColumnName = "ID")     
-    private ArtistDetail artistDetail;
-
 
 }

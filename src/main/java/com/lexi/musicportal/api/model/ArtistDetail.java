@@ -19,6 +19,12 @@ public class ArtistDetail implements Serializable {
 	private String data_quality;
 	private List<Groups> groups;;
 	private List<Images> images;
-	private List<String> namevariations;
+	private Namevariations namevariations;
 
+	@Data
+	public class Namevariations {
+
+		private String Chad;
+		private String Channing;
+	}
 }
